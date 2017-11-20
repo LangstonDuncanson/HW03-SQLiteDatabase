@@ -13,6 +13,9 @@
 		1E289A251FC308C600DD45CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E289A241FC308C600DD45CE /* Assets.xcassets */; };
 		1E289A281FC308C600DD45CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E289A261FC308C600DD45CE /* LaunchScreen.storyboard */; };
 		1E289A2B1FC308C600DD45CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E289A2A1FC308C600DD45CE /* main.m */; };
+		1E289A341FC312A000DD45CE /* MyStudents.db in Resources */ = {isa = PBXBuildFile; fileRef = 1E289A331FC312A000DD45CE /* MyStudents.db */; };
+		1E289A391FC3138F00DD45CE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E289A371FC3137200DD45CE /* libsqlite3.tbd */; };
+		1E289A3C1FC3219500DD45CE /* StudentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E289A3B1FC3219500DD45CE /* StudentInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		1E289A271FC308C600DD45CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E289A291FC308C600DD45CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E289A2A1FC308C600DD45CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E289A331FC312A000DD45CE /* MyStudents.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyStudents.db; sourceTree = "<group>"; };
+		1E289A371FC3137200DD45CE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1E289A381FC3137200DD45CE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		1E289A3A1FC3219500DD45CE /* StudentInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentInfo.h; sourceTree = "<group>"; };
+		1E289A3B1FC3219500DD45CE /* StudentInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E289A391FC3138F00DD45CE /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			children = (
 				1E289A1A1FC308C600DD45CE /* HW03-SQLiteDatabase */,
 				1E289A191FC308C600DD45CE /* Products */,
+				1E289A361FC3137200DD45CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +77,28 @@
 				1E289A261FC308C600DD45CE /* LaunchScreen.storyboard */,
 				1E289A291FC308C600DD45CE /* Info.plist */,
 				1E289A2A1FC308C600DD45CE /* main.m */,
+				1E289A351FC312B000DD45CE /* Database */,
+				1E289A3A1FC3219500DD45CE /* StudentInfo.h */,
+				1E289A3B1FC3219500DD45CE /* StudentInfo.m */,
 			);
 			path = "HW03-SQLiteDatabase";
+			sourceTree = "<group>";
+		};
+		1E289A351FC312B000DD45CE /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				1E289A331FC312A000DD45CE /* MyStudents.db */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		1E289A361FC3137200DD45CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E289A381FC3137200DD45CE /* libsqlite3.0.tbd */,
+				1E289A371FC3137200DD45CE /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E289A281FC308C600DD45CE /* LaunchScreen.storyboard in Resources */,
+				1E289A341FC312A000DD45CE /* MyStudents.db in Resources */,
 				1E289A251FC308C600DD45CE /* Assets.xcassets in Resources */,
 				1E289A231FC308C600DD45CE /* Main.storyboard in Resources */,
 			);
@@ -145,6 +176,7 @@
 				1E289A201FC308C600DD45CE /* ViewController.m in Sources */,
 				1E289A2B1FC308C600DD45CE /* main.m in Sources */,
 				1E289A1D1FC308C600DD45CE /* AppDelegate.m in Sources */,
+				1E289A3C1FC3219500DD45CE /* StudentInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
